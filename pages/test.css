@@ -1,0 +1,96 @@
+/* universal selector */
+* {
+  margin: 0;
+}
+
+/* element selector  */
+p {
+  margin: 25px;
+}
+
+/* id selector */
+#header {
+  padding: 25px;
+}
+
+/* class selector */
+.header {
+  font-size: 16px;
+}
+
+/* attribute selector */
+/* has name attribute */
+[name] {
+  color: red
+}
+
+/* has name attribute whose value is firstName */
+[name="firstName"] {
+  color: red
+}
+
+/* contains firstName with whitespace separated */
+/* [name ~="firstName"] {
+  color: rgb(35, 145, 179)
+} */
+
+/* contains firstName */
+[name*="firstName"] {
+  color: rgb(35, 145, 179)
+}
+
+/* starts with firstName */
+[name^="firstName"] {
+  color: rgb(35, 145, 179)
+}
+
+/* ends with firstName */
+[name$="firstName"] {
+  color: rgb(35, 145, 179)
+}
+
+/* compound selector */
+/* div with class header */
+div.header {
+  color: rgb(35, 145, 179)
+}
+
+/* div with id header */
+div#header {
+  color: aliceblue;
+  font-size: 16px
+}
+
+/* class header, and class footer individually */
+.header,
+.footer {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* descendant combinator */
+.header div {
+  margin: 20px;
+}
+
+/* direct child */
+.header > div {
+  text-align: center;
+}
+
+/* general sibling */
+.header ~ div {
+  font-size: 12px;
+}
+
+/* direct sibling */
+.header + div {
+  font-size: 12px;
+}
+
+div.header > div + button a {
+  text-transform: capitalize;
+}
+
+a:active {
+  color: red;
+}
