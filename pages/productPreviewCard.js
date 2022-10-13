@@ -1,5 +1,5 @@
 import { Box, Typography, Button } from '@mui/material';
-import Image from 'next/image';
+import Image from 'mui-image';
 import imageSrc from '../public/channel.jpg';
 
 // TODO research about cumulative shift
@@ -21,25 +21,21 @@ function ProductPreviewCard() {
           className="CardContainer"
           sx={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(160px, 1fr))',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(327px, 1fr))',
             borderRadius: '12px',
             overflow: 'hidden'
           }}
         >
           <Box className="CardColumn" sx={{ backgroundColor: 'green' }}>
             <Box
+              class="ImageContainer"
               sx={{
-                position: 'relative',
-                width: '100%',
-                aspectRatio: '3 / 4.5'
+                aspectRatio: '653 / 1163'
               }}
             >
               <Image
                 alt="Mountains"
-                src={imageSrc}
-                // src="https://images.unsplash.com/photo-1597220282565-0752c930fb5b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=654&q=80"
-                layout="fill"
-                placeholder="blur"
+                src="https://images.unsplash.com/photo-1597220282565-0752c930fb5b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=654&q=80"
               />
             </Box>
           </Box>
